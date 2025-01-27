@@ -8,6 +8,15 @@
   text-decoration: none;
 }
 
+body {
+  background-color: var(--color-bg);
+}
+
+:root {
+  --color-primary: black;
+  --color-bg: white;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
