@@ -132,3 +132,19 @@
   max-width: 600px;
   margin-inline: auto;
 }
+
+.button[data-variant="outline"] {
+  --button-bg: transparent;
+  --button-color: black;
+  --button-border-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.button[data-variant="outline"]:hover {
+  --button-bg: black;
+  --button-color: white;
+  --button-hover-bg: transparent;
+  --button-hover-color: black;
+  --button-border-color: var(--button-bg);
+}
