@@ -17,6 +17,11 @@ body {
   --color-bg: white;
 }
 
+:root[data-theme="dark"] {
+  --color-primary: white;
+  --color-bg: black;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
