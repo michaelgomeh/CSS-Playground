@@ -1,3 +1,29 @@
 .button {
-  background-color: red;
+  background-color: var(--button-bg, black);
+  color: var(--button-color, white);
+
+  padding: var(--button-padding, 1rem 2.5rem);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--button-gap, 0.5rem);
+  cursor: pointer;
+  border-width: var(--button-border-widthת, 2px);
+  border-style: var(--button-border-style, solid);
+  border-color: var(--button-border-color, gray);
+  border-radius: var(--button-radius, 0);
+  transition: 200ms all ease-in-out;
+
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-style: normal;
+}
+
+.button:hover {
+  --button-border-color: black;
+  --button-bg: white;
+  --button-color: black;
 }
