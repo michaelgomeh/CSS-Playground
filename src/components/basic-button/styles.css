@@ -1,5 +1,6 @@
 .button {
-  --button-padding: 1rem 2.5rem;
+  --button-padding: 0.7rem 1.4rem;
+  --button-margin: 1rem;
   --button-gap: 0.5em;
   --button-bg: black;
   --button-color: #ffffff;
@@ -9,11 +10,11 @@
   --button-border-style: solid;
   --button-border-color: var(--button-bg);
   --button-radius: 0;
-  --button-font-size: 1em;
+  --button-font-size: 0.8em;
 
   background-color: var(--button-bg, black);
   color: var(--button-color, white);
-
+  margin-inline: var(--button-margin, 1rem);
   padding: var(--button-padding);
   display: inline-flex;
   justify-content: center;
@@ -30,39 +31,36 @@
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  letter-spacing: 0.1ch;
+  font-weight: 500;
+  letter-spacing: 3px;
+  &:hover {
+    --button-border-color: black;
+    --button-bg: white;
+    --button-color: black;
+  }
+
+  &:active {
+    transform: scale(95%);
+  }
 }
 
-.button[wide] {
+.wide {
   width: 100%;
 }
-
-.button:hover {
-  --button-border-color: black;
-  --button-bg: white;
-  --button-color: black;
-}
-
-.button:active {
-  transform: scale(95%);
-}
-
-/* Variants: default, danger, icon, outline, text */
 
 .button[data-variant="text"] {
   --button-bg: transparent;
   --button-color: black;
   overflow: hidden;
   position: relative;
-}
 
-.button[data-variant="text"]:hover {
-  --button-bg: white;
-  --button-color: black;
-  --button-hover-bg: transparent;
-  --button-hover-color: black;
-  --button-border-color: var(--button-bg);
+  &:hover {
+    --button-bg: white;
+    --button-color: black;
+    --button-hover-bg: transparent;
+    --button-hover-color: black;
+    --button-border-color: var(--button-bg);
+  }
 }
 
 .button[data-variant="text"]::after {
@@ -85,11 +83,11 @@
 .button[data-variant="danger"] {
   --button-bg: red;
   --button-border-color: #710000;
-}
 
-.button[data-variant="danger"]:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: 2;
+  &:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 2;
+  }
 }
 
 @keyframes shake {
@@ -139,12 +137,12 @@
   --button-border-color: black;
   overflow: hidden;
   position: relative;
-}
 
-.button[data-variant="outline"]:hover {
-  --button-bg: black;
-  --button-color: white;
-  --button-hover-bg: transparent;
-  --button-hover-color: black;
-  --button-border-color: var(--button-bg);
+  &:hover {
+    --button-bg: black;
+    --button-color: white;
+    --button-hover-bg: transparent;
+    --button-hover-color: black;
+    --button-border-color: var(--button-bg);
+  }
 }
