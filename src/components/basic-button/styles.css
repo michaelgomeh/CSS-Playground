@@ -54,4 +54,36 @@
   transform: scale(95%);
 }
 
-/* Variants: default, primary, danger, icon, outline, text */
+/* Variants: default, danger, icon, outline, text */
+
+.button[data-variant="text"] {
+  --button-bg: transparent;
+  --button-color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+.button[data-variant="text"]:hover {
+  --button-bg: white;
+  --button-color: black;
+  --button-hover-bg: transparent;
+  --button-hover-color: black;
+  --button-border-color: var(--button-bg);
+}
+
+.button[data-variant="text"]::after {
+  content: "";
+  background-color: black;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition: transform 200ms ease-in;
+}
+
+.button[data-variant="text"]:hover::after {
+  transform: scaleX(1);
+}
