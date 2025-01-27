@@ -30,9 +30,8 @@
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 100;
-  letter-spacing: 0.05ch;
-  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1ch;
 }
 
 .button[wide] {
@@ -43,11 +42,6 @@
   --button-border-color: black;
   --button-bg: white;
   --button-color: black;
-}
-
-.button svg {
-  height: var(button-icon-size, 32px);
-  aspect-ratio: 1;
 }
 
 .button:active {
