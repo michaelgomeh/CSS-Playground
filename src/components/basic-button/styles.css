@@ -35,7 +35,7 @@
   font-style: normal;
 }
 
-.w-full {
+.button[wide] {
   width: 100%;
 }
 
