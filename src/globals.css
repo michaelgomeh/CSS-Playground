@@ -6,3 +6,13 @@
   box-sizing: border-box;
   border: 0;
 }
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
