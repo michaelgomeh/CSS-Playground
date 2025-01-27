@@ -45,4 +45,13 @@
   --button-color: black;
 }
 
+.button svg {
+  height: var(button-icon-size, 32px);
+  aspect-ratio: 1;
+}
+
+.button:active {
+  transform: scale(95%);
+}
+
 /* Variants: default, primary, danger, icon, outline, text */
