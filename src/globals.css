@@ -10,12 +10,16 @@
 
 html,
 body {
-  height: 100%;
+  height: calc(100vh-60px);
 }
 
 body {
   background-color: var(--color-bg);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin-top: 60px;
 }
 
 :root {
@@ -60,6 +64,10 @@ text-center {
 }
 
 .nav {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
   background-color: var(--color-primary);
   color: var(--color-bg);
   padding-inline: 1rem;
