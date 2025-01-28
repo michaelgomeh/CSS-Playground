@@ -18,8 +18,12 @@
   display: inline-flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  gap: 0;
 }
 
+.card-content img {
+  border-bottom: 1px solid gray;
+}
 .p-sm {
   padding: 1rem;
 }
@@ -41,8 +45,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform-origin: center left;
-  transition: transform 200ms ease-in;
 }
 
 .card-content {
