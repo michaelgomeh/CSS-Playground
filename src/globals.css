@@ -10,6 +10,7 @@
 
 body {
   background-color: var(--color-bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -31,9 +32,47 @@ body {
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
-  align-items: center;
 }
 
 .col {
   flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: start;
+}
+
+text-center {
+  text-align: center;
+}
+
+.nav {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding-inline: 1rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  color: inherit;
+}
+
+.nav .title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.4ch;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
