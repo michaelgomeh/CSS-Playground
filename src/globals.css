@@ -22,6 +22,12 @@ body {
   --color-bg: black;
 }
 
+.container {
+  padding: 5rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);

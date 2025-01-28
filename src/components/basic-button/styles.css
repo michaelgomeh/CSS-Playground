@@ -124,12 +124,6 @@
   }
 }
 
-.container {
-  padding: 5rem;
-  max-width: 600px;
-  margin-inline: auto;
-}
-
 .button[data-variant="outline"] {
   --button-bg: transparent;
   --button-color: var(--color-primary);
