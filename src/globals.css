@@ -1,97 +1,107 @@
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 0;
-  text-decoration: none;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+	text-decoration: none;
 }
 
 html,
 body {
-  height: calc(100vh-60px);
+	height: calc(100vh-60px);
 }
 
 body {
-  background-color: var(--color-bg);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--color-bg);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 main {
-  margin-top: 60px;
+	margin-top: 60px;
 }
 
 :root {
-  --color-primary: black;
-  --color-bg: white;
+	--color-primary: black;
+	--color-bg: white;
 }
 
-:root[data-theme="dark"] {
-  --color-primary: white;
-  --color-bg: black;
+:root[data-theme='dark'] {
+	--color-primary: white;
+	--color-bg: black;
 }
 
 .container {
-  padding: 1rem;
-  max-width: 800px;
-  margin-inline: auto;
+	padding: 1rem;
+	max-width: 800px;
+	margin-inline: auto;
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 5rem;
-  }
+	.container {
+		padding: 5rem;
+	}
 }
 
 .flex {
-  display: flex;
-  gap: var(--gap, 1rem);
+	display: flex;
+	gap: var(--gap, 1rem);
 }
 
 .col {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .row {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 .items-center {
-  align-items: center;
+	align-items: center;
 }
 
 .items-start {
-  align-items: start;
+	align-items: start;
 }
 
 text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .nav {
-  top: 0;
-  position: fixed;
-  z-index: 1000;
-  width: 100vw;
-  background-color: var(--color-primary);
-  color: var(--color-bg);
-  padding-inline: 1rem;
-  height: 60px;
-  display: flex;
-  align-items: center;
+	top: 0;
+	position: fixed;
+	z-index: 1000;
+	width: 100vw;
+	background-color: var(--color-primary);
+	color: var(--color-bg);
+	padding-inline: 1rem;
+	height: 60px;
+	display: flex;
+	align-items: center;
 }
 
 .nav a {
-  color: inherit;
+	color: inherit;
 }
 
 .nav .title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 0.4ch;
+	font-size: 1.3rem;
+	font-weight: 700;
+	letter-spacing: 0.4ch;
 }
 
 .wrap {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.space-sm {
+	height: 8px;
+}
+.space-md {
+	height: 16px;
+}
+.space-lg {
+	height: 32px;
 }
