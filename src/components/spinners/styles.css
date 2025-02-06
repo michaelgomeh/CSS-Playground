@@ -22,6 +22,7 @@
 .spin-3 {
 	width: 32px;
 	height: 32px;
+	transform: translateX(10px);
 }
 .spin-3a {
 	position: absolute;
@@ -76,7 +77,7 @@
 
 @keyframes bounce {
 	0% {
-		transform: scale(1);
+		transform: scale(0.5);
 	}
 	50% {
 		transform: scale(1.3);
